@@ -17,7 +17,7 @@
 @implementation SLVViewController
 @synthesize shareImage=_shareImage;
 @synthesize shareText=_shareText;
-@synthesize imageToShare=_imageToShare;
+//@synthesize imageToShare=_imageToShare;
 
 
 
@@ -55,7 +55,7 @@
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [_shareImage setImage:image];
     [self dismissViewControllerAnimated:YES completion:NULL];
-    _imageToShare = UIImagePNGRepresentation(image);
+    //_imageToShare = UIImagePNGRepresentation(image);
     
 }
 
