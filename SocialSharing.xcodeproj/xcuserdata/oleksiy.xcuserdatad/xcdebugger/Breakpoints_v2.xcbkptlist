@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AAShareBubbles/AAShareBubbles.m"
-            timestampString = "430139606.30293"
+            filePath = "SocialSharing/SLVGoogleSharing.m"
+            timestampString = "430147469.754128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-initWithPoint:radius:inView:"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "-SignInButtonSimulated"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AAShareBubbles/AAShareBubbles.m"
-            timestampString = "430139610.94284"
+            filePath = "SocialSharing/SLVGoogleSharing.m"
+            timestampString = "430147471.428793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-show"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "+init"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AAShareBubbles/AAShareBubbles.m"
-            timestampString = "430139621.566681"
+            filePath = "SocialSharing/SLVGoogleSharing.m"
+            timestampString = "430147474.450203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "-hide"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-finishedWithAuth:error:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,60 +57,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AAShareBubbles/AAShareBubbles.m"
-            timestampString = "430139625.576234"
+            filePath = "SocialSharing/SLVGoogleSharing.m"
+            timestampString = "430147475.730286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "-showBubbleWithAnimation:"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-didTapShare:"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AAShareBubbles/AAShareBubbles.m"
-            timestampString = "430139629.350605"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "-hideBubbleWithAnimation:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[AAShareBubbles hideBubbleWithAnimation:]"
-                  moduleName = "SocialSharing"
-                  urlString = "file:///Users/oleksiy/Desktop/SocialSharing/AAShareBubbles/AAShareBubbles.m"
-                  timestampString = "430139637.917355"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "192"
-                  endingLineNumber = "192"
-                  offsetFromSymbolStart = "85">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[AAShareBubbles hideBubbleWithAnimation:]_block_invoke"
-                  moduleName = "SocialSharing"
-                  urlString = "file:///Users/oleksiy/Desktop/SocialSharing/AAShareBubbles/AAShareBubbles.m"
-                  timestampString = "430139637.917604"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "192"
-                  endingLineNumber = "192"
-                  offsetFromSymbolStart = "30">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

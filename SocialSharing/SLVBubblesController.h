@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SLVViewController.h"
+@class SLVGoogleShare;
+
 
 @interface SLVBubblesController : UIViewController
+
+///GOOGLE +
+@property(strong, nonatomic) SLVGoogleShare * GoogleShar;
+-(void)Share;
+////////
+
+
+//SLViewController
+@property(strong, nonatomic) UIViewController * mainController;
 
 @end

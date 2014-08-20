@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SLVViewController : UIViewController
 
+@interface SLVViewController : UIViewController
+    @property (weak, nonatomic) IBOutlet UIButton *browseButton;
+    @property (weak, nonatomic) IBOutlet UITextView *shareText;
+    @property (weak, nonatomic) IBOutlet UIImageView *shareImage;
 @end
+    

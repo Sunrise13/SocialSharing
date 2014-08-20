@@ -8,8 +8,12 @@
 
 #import "SLVBubblesController.h"
 #import "AAShareBubbles.h"
+#import "SLVGoogleShare.h"
 
 @interface SLVBubblesController() <AAShareBubblesDelegate>
+{
+    
+}
 @end
 
 @implementation SLVBubblesController
@@ -29,7 +33,19 @@
     shareBubbles.showVkBubble = YES;
     shareBubbles.showInstagramBubble = YES;
     [shareBubbles show];
+
+    //Guys it's special for GOOGLE+ :)
+   if(!_GoogleShar)
+   {
+       _GoogleShar = [[SLVGoogleShare alloc] init];
+       _GoogleShar.controller = self;
+   }
+    
+   if([_GoogleShar authorised])[_GoogleShar.signIN trySilentAuthentication];
+    ///////////////////////////////
+
 }
+
 
 -(void)aaShareBubbles:(AAShareBubbles *)shareBubbles tappedBubbleWithType:(AAShareBubbleType)bubbleType
 {
@@ -44,7 +60,7 @@
             NSLog(@"Email");
             break;
         case AAShareBubbleTypeGooglePlus:
-            NSLog(@"Google+");
+            [_GoogleShar didTapShare];
             break;
         case AAShareBubbleTypeTumblr:
             NSLog(@"Tumblr");
@@ -60,5 +76,14 @@
 -(void)aaShareBubblesDidHide {
     NSLog(@"All Bubbles hidden");
 }
+
+-(void)Share
+{
+    id<GPPNativeShareBuilder> shareBuilder = [[GPPShare sharedInstance] nativeShareDialog];
+    [shareBuilder setPrefillText:((SLVViewController*)self.mainController).shareText.text];
+    [shareBuilder attachImage:((SLVViewController*)self.mainController).shareImage.image];
+    [shareBuilder open];
+}
+
 
 @end

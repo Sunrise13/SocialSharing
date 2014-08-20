@@ -7,6 +7,8 @@
 //
 
 #import "SLVViewController.h"
+#import "SLVBubblesController.h"
+
 
 @interface SLVViewController ()
 
@@ -18,12 +20,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"Share"]) {
+        SLVBubblesController * dController = segue.destinationViewController;
+        dController.mainController = self;
+    }
 }
 
 @end
