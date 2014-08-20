@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "SLVViewController.h"
+#import <Social/Social.h>
+
 @class SLVGoogleShare;
+@class SLVFaceBookShare;
 
 
 @interface SLVBubblesController : UIViewController
@@ -17,6 +20,11 @@
 @property(strong, nonatomic) SLVGoogleShare * GoogleShar;
 ////////
 
+
+
+///FaceBook
+@property(strong,nonatomic)SLVFaceBookShare *facebookShare;
+///
 
 //SLViewController
 @property(strong, nonatomic) UIViewController * mainController;

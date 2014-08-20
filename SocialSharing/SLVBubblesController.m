@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 Oleksiy. All rights reserved.
 //
 
+
+
 #import "SLVBubblesController.h"
 #import "AAShareBubbles.h"
 #import "SLVGoogleShare.h"
+#import "SLVFaceBookShare.h"
 
 @interface SLVBubblesController() <AAShareBubblesDelegate>
 {
@@ -18,6 +21,7 @@
 
 
 @implementation SLVBubblesController
+@synthesize facebookShare;
 
 -(void)viewDidLoad
 {
@@ -53,6 +57,11 @@
     switch (bubbleType) {
         case AAShareBubbleTypeFacebook:
             NSLog(@"Facebook");
+            //facebookShare = SLVF
+            facebookShare = [[SLVFaceBookShare alloc]init];
+            facebookShare.controller = self;
+            [facebookShare share];
+            
             break;
         case AAShareBubbleTypeTwitter:
             NSLog(@"Twitter");

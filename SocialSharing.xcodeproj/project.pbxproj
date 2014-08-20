@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D2C078F19A47889004D7316 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2C078E19A47889004D7316 /* images.jpeg */; };
 		4D320B2919A388500063F4BE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2819A388500063F4BE /* AddressBook.framework */; };
 		4D320B2B19A388660063F4BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2A19A388660063F4BE /* MediaPlayer.framework */; };
 		4D320B2D19A388770063F4BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2C19A388770063F4BE /* CoreLocation.framework */; };
@@ -17,9 +16,6 @@
 		4D320B3519A389570063F4BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B3419A389570063F4BE /* SystemConfiguration.framework */; };
 		4D320B3719A389840063F4BE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B3619A389840063F4BE /* CoreMotion.framework */; };
 		4D320B3A19A38B0F0063F4BE /* SLVGoogleShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D320B3919A38B0F0063F4BE /* SLVGoogleShare.m */; };
-		4DCBFE0219A370A400C379A4 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFDFF19A370A400C379A4 /* GoogleOpenSource.framework */; };
-		4DCBFE0319A370A400C379A4 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFE0019A370A400C379A4 /* GooglePlus.bundle */; };
-		4DCBFE0419A370A400C379A4 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFE0119A370A400C379A4 /* GooglePlus.framework */; };
 		4DD6FC2C19A362E700EA66B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD6FC2B19A362E700EA66B8 /* Foundation.framework */; };
 		4DD6FC2E19A362E700EA66B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD6FC2D19A362E700EA66B8 /* CoreGraphics.framework */; };
 		4DD6FC3019A362E700EA66B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD6FC2F19A362E700EA66B8 /* UIKit.framework */; };
@@ -37,6 +33,11 @@
 		4DD6FC6719A364DD00EA66B8 /* AAShareBubbles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6FC6419A364DD00EA66B8 /* AAShareBubbles.bundle */; };
 		4DD6FC6819A364DD00EA66B8 /* AAShareBubbles.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FC6619A364DD00EA66B8 /* AAShareBubbles.m */; };
 		4DD6FC6C19A365EC00EA66B8 /* SLVBubblesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FC6B19A365EC00EA66B8 /* SLVBubblesController.m */; };
+		6F51192C19A50728008E94C9 /* SLVFaceBookShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F51192A19A50728008E94C9 /* SLVFaceBookShare.m */; };
+		6F6E496819A4E85F00D89D35 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6E496719A4E85F00D89D35 /* Social.framework */; };
+		6FCB3F3319A4E24F004EBAF1 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB3F3019A4E24F004EBAF1 /* GoogleOpenSource.framework */; };
+		6FCB3F3419A4E24F004EBAF1 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6FCB3F3119A4E24F004EBAF1 /* GooglePlus.bundle */; };
+		6FCB3F3519A4E24F004EBAF1 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB3F3219A4E24F004EBAF1 /* GooglePlus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D2C078E19A47889004D7316 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
 		4D320B2819A388500063F4BE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		4D320B2A19A388660063F4BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4D320B2C19A388770063F4BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -61,9 +61,6 @@
 		4D320B3619A389840063F4BE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		4D320B3819A38B0F0063F4BE /* SLVGoogleShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVGoogleShare.h; sourceTree = "<group>"; };
 		4D320B3919A38B0F0063F4BE /* SLVGoogleShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVGoogleShare.m; sourceTree = "<group>"; };
-		4DCBFDFF19A370A400C379A4 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = SocialSharing/Googleframeworks/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		4DCBFE0019A370A400C379A4 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = SocialSharing/Googleframeworks/GooglePlus.bundle; sourceTree = "<group>"; };
-		4DCBFE0119A370A400C379A4 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = SocialSharing/Googleframeworks/GooglePlus.framework; sourceTree = "<group>"; };
 		4DD6FC2819A362E700EA66B8 /* SocialSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD6FC2B19A362E700EA66B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DD6FC2D19A362E700EA66B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +85,12 @@
 		4DD6FC6619A364DD00EA66B8 /* AAShareBubbles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAShareBubbles.m; sourceTree = "<group>"; };
 		4DD6FC6A19A365EC00EA66B8 /* SLVBubblesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVBubblesController.h; sourceTree = "<group>"; };
 		4DD6FC6B19A365EC00EA66B8 /* SLVBubblesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVBubblesController.m; sourceTree = "<group>"; };
+		6F51192A19A50728008E94C9 /* SLVFaceBookShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVFaceBookShare.m; sourceTree = "<group>"; };
+		6F51192B19A50728008E94C9 /* SLVFaceBookShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVFaceBookShare.h; sourceTree = "<group>"; };
+		6F6E496719A4E85F00D89D35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6FCB3F3019A4E24F004EBAF1 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = SocialSharing/Googleframeworks/GoogleOpenSource.framework; sourceTree = "<group>"; };
+		6FCB3F3119A4E24F004EBAF1 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = SocialSharing/Googleframeworks/GooglePlus.bundle; sourceTree = "<group>"; };
+		6FCB3F3219A4E24F004EBAF1 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = SocialSharing/Googleframeworks/GooglePlus.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,18 +98,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F6E496819A4E85F00D89D35 /* Social.framework in Frameworks */,
 				4D320B3719A389840063F4BE /* CoreMotion.framework in Frameworks */,
 				4D320B3519A389570063F4BE /* SystemConfiguration.framework in Frameworks */,
 				4D320B3119A388C60063F4BE /* CoreText.framework in Frameworks */,
 				4D320B3319A388D60063F4BE /* Security.framework in Frameworks */,
 				4D320B2F19A3887F0063F4BE /* AssetsLibrary.framework in Frameworks */,
+				6FCB3F3519A4E24F004EBAF1 /* GooglePlus.framework in Frameworks */,
 				4D320B2D19A388770063F4BE /* CoreLocation.framework in Frameworks */,
 				4D320B2B19A388660063F4BE /* MediaPlayer.framework in Frameworks */,
 				4D320B2919A388500063F4BE /* AddressBook.framework in Frameworks */,
-				4DCBFE0419A370A400C379A4 /* GooglePlus.framework in Frameworks */,
 				4DD6FC2E19A362E700EA66B8 /* CoreGraphics.framework in Frameworks */,
 				4DD6FC3019A362E700EA66B8 /* UIKit.framework in Frameworks */,
-				4DCBFE0219A370A400C379A4 /* GoogleOpenSource.framework in Frameworks */,
+				6FCB3F3319A4E24F004EBAF1 /* GoogleOpenSource.framework in Frameworks */,
 				4DD6FC2C19A362E700EA66B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +130,6 @@
 		4D5B342819A36E8100DDBBFF /* Google+ */ = {
 			isa = PBXGroup;
 			children = (
-				4D2C078E19A47889004D7316 /* images.jpeg */,
 				4D320B3819A38B0F0063F4BE /* SLVGoogleShare.h */,
 				4D320B3919A38B0F0063F4BE /* SLVGoogleShare.m */,
 			);
@@ -156,6 +159,10 @@
 		4DD6FC2A19A362E700EA66B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F6E496719A4E85F00D89D35 /* Social.framework */,
+				6FCB3F3019A4E24F004EBAF1 /* GoogleOpenSource.framework */,
+				6FCB3F3119A4E24F004EBAF1 /* GooglePlus.bundle */,
+				6FCB3F3219A4E24F004EBAF1 /* GooglePlus.framework */,
 				4D320B3619A389840063F4BE /* CoreMotion.framework */,
 				4D320B3419A389570063F4BE /* SystemConfiguration.framework */,
 				4D320B3219A388D60063F4BE /* Security.framework */,
@@ -164,9 +171,6 @@
 				4D320B2C19A388770063F4BE /* CoreLocation.framework */,
 				4D320B2A19A388660063F4BE /* MediaPlayer.framework */,
 				4D320B2819A388500063F4BE /* AddressBook.framework */,
-				4DCBFDFF19A370A400C379A4 /* GoogleOpenSource.framework */,
-				4DCBFE0019A370A400C379A4 /* GooglePlus.bundle */,
-				4DCBFE0119A370A400C379A4 /* GooglePlus.framework */,
 				4DD6FC2B19A362E700EA66B8 /* Foundation.framework */,
 				4DD6FC2D19A362E700EA66B8 /* CoreGraphics.framework */,
 				4DD6FC2F19A362E700EA66B8 /* UIKit.framework */,
@@ -177,6 +181,7 @@
 		4DD6FC3119A362E700EA66B8 /* SocialSharing */ = {
 			isa = PBXGroup;
 			children = (
+				6F51192D19A5072C008E94C9 /* FaceBook */,
 				4D5B342819A36E8100DDBBFF /* Google+ */,
 				4DD6FC6919A365B500EA66B8 /* OurBubbles */,
 				4DD6FC3A19A362E700EA66B8 /* SLVAppDelegate.h */,
@@ -237,6 +242,15 @@
 				4DD6FC6B19A365EC00EA66B8 /* SLVBubblesController.m */,
 			);
 			name = OurBubbles;
+			sourceTree = "<group>";
+		};
+		6F51192D19A5072C008E94C9 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				6F51192B19A50728008E94C9 /* SLVFaceBookShare.h */,
+				6F51192A19A50728008E94C9 /* SLVFaceBookShare.m */,
+			);
+			name = FaceBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +333,8 @@
 				4DD6FC6719A364DD00EA66B8 /* AAShareBubbles.bundle in Resources */,
 				4DD6FC4219A362E700EA66B8 /* Main_iPad.storyboard in Resources */,
 				4DD6FC4719A362E700EA66B8 /* Images.xcassets in Resources */,
-				4D2C078F19A47889004D7316 /* images.jpeg in Resources */,
 				4DD6FC3F19A362E700EA66B8 /* Main_iPhone.storyboard in Resources */,
-				4DCBFE0319A370A400C379A4 /* GooglePlus.bundle in Resources */,
+				6FCB3F3419A4E24F004EBAF1 /* GooglePlus.bundle in Resources */,
 				4DD6FC3619A362E700EA66B8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F51192C19A50728008E94C9 /* SLVFaceBookShare.m in Sources */,
 				4DD6FC3C19A362E700EA66B8 /* SLVAppDelegate.m in Sources */,
 				4DD6FC6C19A365EC00EA66B8 /* SLVBubblesController.m in Sources */,
 				4DD6FC4519A362E700EA66B8 /* SLVViewController.m in Sources */,
@@ -487,6 +501,7 @@
 					"$(inherited)",
 					/Users/oleksiy/Desktop/SocialSharing2,
 					/Users/oleksiy/Desktop/SocialSharing2/SocialSharing/Googleframeworks,
+					"$(PROJECT_DIR)/SocialSharing/Googleframeworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialSharing/SocialSharing-Prefix.pch";
@@ -506,6 +521,7 @@
 					"$(inherited)",
 					/Users/oleksiy/Desktop/SocialSharing2,
 					/Users/oleksiy/Desktop/SocialSharing2/SocialSharing/Googleframeworks,
+					"$(PROJECT_DIR)/SocialSharing/Googleframeworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialSharing/SocialSharing-Prefix.pch";
