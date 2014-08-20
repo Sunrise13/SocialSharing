@@ -11,8 +11,10 @@
 #import <GooglePlus/GooglePlus.h>
 #import "SLVBubblesController.h"
 
-#define GOOGLE_PLUS_CLIEND_ID @"440607175691-4bhfdefg7sbkrrjk3mp9t5dc15upiet0.apps.googleusercontent.com"
+//#define GOOGLE_PLUS_CLIEND_ID @"440607175691-4bhfdefg7sbkrrjk3mp9t5dc15upiet0.apps.googleusercontent.com"
+@interface SLVGoogleShare() <GPPShareDelegate>
 
+@end
 @implementation SLVGoogleShare
 
 static NSString * const kClientId = @"1016027576680-pb3pjbsfdag7c4et9clvarebh7sh6ae3.apps.googleusercontent.com";
@@ -23,8 +25,8 @@ static NSString * const kClientId = @"1016027576680-pb3pjbsfdag7c4et9clvarebh7sh
     GPPSignIn *signIn = [GPPSignIn sharedInstance];
     self.signIN = signIn;
     signIn.shouldFetchGooglePlusUser = YES;
-    signIn.shouldFetchGoogleUserEmail = YES;  // Uncomment to get the user's email
-    signIn.scopes = @[ kGTLAuthScopePlusLogin ];  // "https://www.googleapis.com/auth/plus.login" scope
+    signIn.shouldFetchGoogleUserEmail = YES;
+    signIn.scopes = @[ kGTLAuthScopePlusLogin ];  
     signIn.clientID = kClientId;
     signIn.delegate = self;
     [signIn authenticate];
@@ -41,12 +43,12 @@ static NSString * const kClientId = @"1016027576680-pb3pjbsfdag7c4et9clvarebh7sh
 {
     NSLog(@"Received error %@ and auth object %@",error, auth);
     if (error) {
-        // Do some error handling here.
+
     } else {
         NSLog(@"%@ %@",[GPPSignIn sharedInstance].userEmail, [GPPSignIn sharedInstance].userID);
-        //     [self refreshInterfaceBasedOnSignIn];
-       [self.controller Share];
-        self.authorised = TRUE;
+       
+        [self Share];
+         self.authorised = TRUE;
     }
 }
 
@@ -58,7 +60,7 @@ static NSString * const kClientId = @"1016027576680-pb3pjbsfdag7c4et9clvarebh7sh
         [self SignInButtonSimulated];
     }
     else
-    [self.controller Share];
+    [self Share];
 }
 
 
@@ -76,10 +78,23 @@ static NSString * const kClientId = @"1016027576680-pb3pjbsfdag7c4et9clvarebh7sh
     if (error) {
         NSLog(@"Received error %@", error);
     } else {
-        // The user is signed out and disconnected.
-        // Clean up user data as specified by the Google+ terms.
+        NSLog(@"Ok");
     }
 }
 
+-(void)Share
+{
+    id<GPPNativeShareBuilder> shareBuilder = [[GPPShare sharedInstance] nativeShareDialog];
+    [GPPShare sharedInstance].delegate = self;
+    [shareBuilder setPrefillText:((SLVViewController*)self.controller.mainController).shareText.text];
+    [shareBuilder attachImage:((SLVViewController*)self.controller.mainController).shareImage.image];
+    [shareBuilder open];
+}
+
+- (void)finishedSharing:(BOOL)shared;
+{
+   if(shared)
+       [self.controller.mainController.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end

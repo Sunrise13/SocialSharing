@@ -16,6 +16,7 @@
 }
 @end
 
+
 @implementation SLVBubblesController
 
 -(void)viewDidLoad
@@ -77,13 +78,6 @@
     NSLog(@"All Bubbles hidden");
 }
 
--(void)Share
-{
-    id<GPPNativeShareBuilder> shareBuilder = [[GPPShare sharedInstance] nativeShareDialog];
-    [shareBuilder setPrefillText:((SLVViewController*)self.mainController).shareText.text];
-    [shareBuilder attachImage:((SLVViewController*)self.mainController).shareImage.image];
-    [shareBuilder open];
-}
 
 
 @end

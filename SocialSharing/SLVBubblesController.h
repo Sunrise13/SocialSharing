@@ -15,7 +15,6 @@
 
 ///GOOGLE +
 @property(strong, nonatomic) SLVGoogleShare * GoogleShar;
--(void)Share;
 ////////
 
 
