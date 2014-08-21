@@ -21,7 +21,7 @@
         {
             SLComposeViewController *slcontroller = [SLComposeViewController
                                                      composeViewControllerForServiceType:SLServiceTypeFacebook];
-            if (((SLVViewController*)self.controller.mainController).shareText.text != nil){
+            if (![((SLVViewController*)self.controller.mainController).shareText.text  isEqual:@""]){
                 [slcontroller setInitialText:((SLVViewController*)self.controller.mainController).shareText.text];
             }
             if ((((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1) && (((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1)){
