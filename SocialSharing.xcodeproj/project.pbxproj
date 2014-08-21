@@ -62,6 +62,12 @@
 		6FCB3F3319A4E24F004EBAF1 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB3F3019A4E24F004EBAF1 /* GoogleOpenSource.framework */; };
 		6FCB3F3419A4E24F004EBAF1 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6FCB3F3119A4E24F004EBAF1 /* GooglePlus.bundle */; };
 		6FCB3F3519A4E24F004EBAF1 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB3F3219A4E24F004EBAF1 /* GooglePlus.framework */; };
+		D2A5241E19A6111000DE3FB2 /* SLVOAuthSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A5241D19A6111000DE3FB2 /* SLVOAuthSetup.m */; };
+		D2A5242219A6113600DE3FB2 /* SLVLInShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A5242119A6113600DE3FB2 /* SLVLInShareViewController.m */; };
+		D2A5242619A6114B00DE3FB2 /* SLVLinkedInApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A5242519A6114B00DE3FB2 /* SLVLinkedInApi.m */; };
+		D2A5242E19A6117B00DE3FB2 /* SLVDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A5242A19A6117B00DE3FB2 /* SLVDBManager.m */; };
+		D2A5242F19A6117B00DE3FB2 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A5242C19A6117B00DE3FB2 /* Users.m */; };
+		D2A5243019A6117B00DE3FB2 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D2A5242D19A6117B00DE3FB2 /* Model.xcdatamodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +170,17 @@
 		6FCB3F3019A4E24F004EBAF1 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = SocialSharing/Googleframeworks/GoogleOpenSource.framework; sourceTree = "<group>"; };
 		6FCB3F3119A4E24F004EBAF1 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = SocialSharing/Googleframeworks/GooglePlus.bundle; sourceTree = "<group>"; };
 		6FCB3F3219A4E24F004EBAF1 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = SocialSharing/Googleframeworks/GooglePlus.framework; sourceTree = "<group>"; };
+		D2A5241C19A6111000DE3FB2 /* SLVOAuthSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVOAuthSetup.h; sourceTree = "<group>"; };
+		D2A5241D19A6111000DE3FB2 /* SLVOAuthSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVOAuthSetup.m; sourceTree = "<group>"; };
+		D2A5242019A6113600DE3FB2 /* SLVLInShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVLInShareViewController.h; sourceTree = "<group>"; };
+		D2A5242119A6113600DE3FB2 /* SLVLInShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVLInShareViewController.m; sourceTree = "<group>"; };
+		D2A5242419A6114B00DE3FB2 /* SLVLinkedInApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVLinkedInApi.h; sourceTree = "<group>"; };
+		D2A5242519A6114B00DE3FB2 /* SLVLinkedInApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVLinkedInApi.m; sourceTree = "<group>"; };
+		D2A5242919A6117B00DE3FB2 /* SLVDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVDBManager.h; sourceTree = "<group>"; };
+		D2A5242A19A6117B00DE3FB2 /* SLVDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVDBManager.m; sourceTree = "<group>"; };
+		D2A5242B19A6117B00DE3FB2 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		D2A5242C19A6117B00DE3FB2 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		D2A5242D19A6117B00DE3FB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +318,7 @@
 		4DD6FC1F19A362E700EA66B8 = {
 			isa = PBXGroup;
 			children = (
+				D2A5242819A6116900DE3FB2 /* DBManager */,
 				4DD6FC6319A364DD00EA66B8 /* AAShareBubbles */,
 				4DD6FC3119A362E700EA66B8 /* SocialSharing */,
 				4DD6FC5319A362E700EA66B8 /* SocialSharingTests */,
@@ -414,6 +432,55 @@
 				6F51192A19A50728008E94C9 /* SLVFaceBookShare.m */,
 			);
 			name = FaceBook;
+			sourceTree = "<group>";
+		};
+		D2A5241A19A610F600DE3FB2 /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5242319A6113C00DE3FB2 /* LinkedInApi */,
+				D2A5241F19A6111600DE3FB2 /* Share */,
+				D2A5241B19A610FE00DE3FB2 /* OAuthSetup */,
+			);
+			name = LinkedIn;
+			sourceTree = "<group>";
+		};
+		D2A5241B19A610FE00DE3FB2 /* OAuthSetup */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5241C19A6111000DE3FB2 /* SLVOAuthSetup.h */,
+				D2A5241D19A6111000DE3FB2 /* SLVOAuthSetup.m */,
+			);
+			name = OAuthSetup;
+			sourceTree = "<group>";
+		};
+		D2A5241F19A6111600DE3FB2 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5242019A6113600DE3FB2 /* SLVLInShareViewController.h */,
+				D2A5242119A6113600DE3FB2 /* SLVLInShareViewController.m */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		D2A5242319A6113C00DE3FB2 /* LinkedInApi */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5242419A6114B00DE3FB2 /* SLVLinkedInApi.h */,
+				D2A5242519A6114B00DE3FB2 /* SLVLinkedInApi.m */,
+			);
+			name = LinkedInApi;
+			sourceTree = "<group>";
+		};
+		D2A5242819A6116900DE3FB2 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5242919A6117B00DE3FB2 /* SLVDBManager.h */,
+				D2A5242A19A6117B00DE3FB2 /* SLVDBManager.m */,
+				D2A5242B19A6117B00DE3FB2 /* Users.h */,
+				D2A5242C19A6117B00DE3FB2 /* Users.m */,
+				D2A5242D19A6117B00DE3FB2 /* Model.xcdatamodel */,
+			);
+			name = DBManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +599,7 @@
 				1DF6091819A60DF4000B2034 /* UIAlertView+AFNetworking.m in Sources */,
 				1DF6090C19A60DF4000B2034 /* AFHTTPRequestOperationManager.m in Sources */,
 				4DD6FC3C19A362E700EA66B8 /* SLVAppDelegate.m in Sources */,
+				D2A5242E19A6117B00DE3FB2 /* SLVDBManager.m in Sources */,
 				4DD6FC6C19A365EC00EA66B8 /* SLVBubblesController.m in Sources */,
 				1DF6091A19A60DF4000B2034 /* UIImageView+AFNetworking.m in Sources */,
 				1DF6090D19A60DF4000B2034 /* AFHTTPSessionManager.m in Sources */,
@@ -548,6 +616,8 @@
 				1DF6091D19A60DF4000B2034 /* UIWebView+AFNetworking.m in Sources */,
 				1DF6091219A60DF4000B2034 /* AFURLResponseSerialization.m in Sources */,
 				349D282C19A5C3B100C48410 /* SLVTwitterShare.m in Sources */,
+				D2A5242619A6114B00DE3FB2 /* SLVLinkedInApi.m in Sources */,
+				D2A5242F19A6117B00DE3FB2 /* Users.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,8 +748,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/oleksiy/Desktop/SocialSharing2,
-					/Users/oleksiy/Desktop/SocialSharing2/SocialSharing/Googleframeworks,
 					"$(PROJECT_DIR)/SocialSharing/Googleframeworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -698,8 +766,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/oleksiy/Desktop/SocialSharing2,
-					/Users/oleksiy/Desktop/SocialSharing2/SocialSharing/Googleframeworks,
 					"$(PROJECT_DIR)/SocialSharing/Googleframeworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
