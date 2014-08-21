@@ -2,7 +2,7 @@
 //  SLVTwitterShare.h
 //  SocialSharing
 //
-//  Created by iVasyl on 8/20/14.
+//  Created by iVasyl on 8/21/14.
 //  Copyright (c) 2014 Oleksiy. All rights reserved.
 //
 
@@ -16,3 +16,4 @@
 - (IBAction) didTapShare;
 
 @end
+

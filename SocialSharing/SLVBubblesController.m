@@ -11,6 +11,7 @@
 #import "SLVBubblesController.h"
 #import "AAShareBubbles.h"
 #import "SLVGoogleShare.h"
+#import "SLVTwitterShare.h"
 #import "SLVFaceBookShare.h"
 
 @interface SLVBubblesController() <AAShareBubblesDelegate>
@@ -22,6 +23,8 @@
 
 @implementation SLVBubblesController
 @synthesize facebookShare;
+@synthesize twitterShare;
+
 
 -(void)viewDidLoad
 {
@@ -51,20 +54,19 @@
 
 }
 
-
 -(void)aaShareBubbles:(AAShareBubbles *)shareBubbles tappedBubbleWithType:(AAShareBubbleType)bubbleType
 {
     switch (bubbleType) {
         case AAShareBubbleTypeFacebook:
-            NSLog(@"Facebook");
             //facebookShare = SLVF
             facebookShare = [[SLVFaceBookShare alloc]init];
             facebookShare.controller = self;
             [facebookShare share];
-            
             break;
         case AAShareBubbleTypeTwitter:
-            NSLog(@"Twitter");
+            twitterShare = [[SLVTwitterShare alloc] init];
+            twitterShare.controller = self;
+            [twitterShare didTapShare];
             break;
         case AAShareBubbleTypeMail:
             NSLog(@"Email");

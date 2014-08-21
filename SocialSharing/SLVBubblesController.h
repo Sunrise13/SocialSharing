@@ -11,20 +11,22 @@
 #import <Social/Social.h>
 
 @class SLVGoogleShare;
+@class SLVTwitterShare;
 @class SLVFaceBookShare;
 
 
 @interface SLVBubblesController : UIViewController
 
-///GOOGLE +
-@property(strong, nonatomic) SLVGoogleShare * GoogleShar;
-////////
-
-
-
-///FaceBook
-@property(strong,nonatomic)SLVFaceBookShare *facebookShare;
-///
+///////////////////////////////////////////////////////////////
+///GOOGLE +                                                ////
+@property(strong, nonatomic) SLVGoogleShare * GoogleShar;  ////
+///                                                        ////
+///TWITTER ^                                               ////
+@property(strong, nonatomic) SLVTwitterShare *twitterShare;////
+///                                                        ////
+///FaceBook f                                              ////
+@property(strong,nonatomic)SLVFaceBookShare *facebookShare;////
+///////////////////////////////////////////////////////////////
 
 //SLViewController
 @property(strong, nonatomic) UIViewController * mainController;

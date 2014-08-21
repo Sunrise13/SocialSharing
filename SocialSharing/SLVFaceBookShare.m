@@ -21,8 +21,12 @@
         {
             SLComposeViewController *slcontroller = [SLComposeViewController
                                                      composeViewControllerForServiceType:SLServiceTypeFacebook];
-            [slcontroller setInitialText:((SLVViewController*)self.controller.mainController).shareText.text];
+            if (((SLVViewController*)self.controller.mainController).shareText.text != nil){
+                [slcontroller setInitialText:((SLVViewController*)self.controller.mainController).shareText.text];
+            }
+            if ((((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1) && (((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1)){
             [slcontroller addImage:((SLVViewController*)self.controller.mainController).shareImage.image];
+            }
             //[slcontroller addURL:[NSURL URLWithString:@"www.google.com.ua/"]];
             slcontroller.completionHandler = ^(SLComposeViewControllerResult result){
                 NSLog(@"Completed");
@@ -43,6 +47,20 @@
         NSLog(@"exeption!");
     }
     
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0)
+    {}
+    else if (buttonIndex == 1)
+    {
+        //[self setAlertForSettingPage];
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=TWITTER"]];
+        NSURL *fr =[NSURL URLWithString:[@"https://www.facebook.com/" stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"https://www.facebook.com/" stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
+        
+    }
 }
 
 @end

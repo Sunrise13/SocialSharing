@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349D282C19A5C3B100C48410 /* SLVTwitterShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 349D282B19A5C3B100C48410 /* SLVTwitterShare.m */; };
 		4D320B2919A388500063F4BE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2819A388500063F4BE /* AddressBook.framework */; };
 		4D320B2B19A388660063F4BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2A19A388660063F4BE /* MediaPlayer.framework */; };
 		4D320B2D19A388770063F4BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320B2C19A388770063F4BE /* CoreLocation.framework */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349D282A19A5C3B100C48410 /* SLVTwitterShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVTwitterShare.h; sourceTree = "<group>"; };
+		349D282B19A5C3B100C48410 /* SLVTwitterShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVTwitterShare.m; sourceTree = "<group>"; };
 		4D320B2819A388500063F4BE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		4D320B2A19A388660063F4BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4D320B2C19A388770063F4BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349D282D19A5C3C400C48410 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				349D282A19A5C3B100C48410 /* SLVTwitterShare.h */,
+				349D282B19A5C3B100C48410 /* SLVTwitterShare.m */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
 		4D5B342819A36E8100DDBBFF /* Google+ */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 				4D5B342819A36E8100DDBBFF /* Google+ */,
 				4DD6FC6919A365B500EA66B8 /* OurBubbles */,
 				4DD6FC3A19A362E700EA66B8 /* SLVAppDelegate.h */,
+				349D282D19A5C3C400C48410 /* Twitter */,
 				4DD6FC3B19A362E700EA66B8 /* SLVAppDelegate.m */,
 				4DD6FC3D19A362E700EA66B8 /* Main_iPhone.storyboard */,
 				4DD6FC4019A362E700EA66B8 /* Main_iPad.storyboard */,
@@ -361,6 +374,7 @@
 				4D320B3A19A38B0F0063F4BE /* SLVGoogleShare.m in Sources */,
 				4DD6FC3819A362E700EA66B8 /* main.m in Sources */,
 				4DD6FC6819A364DD00EA66B8 /* AAShareBubbles.m in Sources */,
+				349D282C19A5C3B100C48410 /* SLVTwitterShare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

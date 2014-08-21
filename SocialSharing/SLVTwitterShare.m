@@ -2,7 +2,7 @@
 //  SLVTwitterShare.m
 //  SocialSharing
 //
-//  Created by iVasyl on 8/20/14.
+//  Created by iVasyl on 8/21/14.
 //  Copyright (c) 2014 Oleksiy. All rights reserved.
 //
 
@@ -17,14 +17,14 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController *slcontroller = [SLComposeViewController
-                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+                                                 composeViewControllerForServiceType:SLServiceTypeTwitter];
         
         //((SLVViewController*)self.controller.mainController).shareText.text = @"Do you want to have a kitten?";
         //((SLVViewController*)self.controller.mainController).shareImage.image =[UIImage imageNamed:@"mejn-kun_3.jpg"];
-
+        
         if (((SLVViewController*)self.controller.mainController).shareText.text != nil){
             [slcontroller setInitialText:((SLVViewController*)self.controller.mainController).shareText.text];}
-
+        
         if ((((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1) && (((SLVViewController*)self.controller.mainController).shareImage.image.size.height>1)){
             [slcontroller addImage:((SLVViewController*)self.controller.mainController).shareImage.image];
         }
@@ -53,8 +53,8 @@
     {
         //[self setAlertForSettingPage];
         //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=TWITTER"]];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"https://www.facebook.com/" stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
-
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"https://www.twitter.com/" stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
+        
     }
 }
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
@@ -63,3 +63,4 @@
 }
 
 @end
+
