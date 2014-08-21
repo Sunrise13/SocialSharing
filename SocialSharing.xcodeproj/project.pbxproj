@@ -23,7 +23,6 @@
 		4DD6FC3619A362E700EA66B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6FC3419A362E700EA66B8 /* InfoPlist.strings */; };
 		4DD6FC3819A362E700EA66B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FC3719A362E700EA66B8 /* main.m */; };
 		4DD6FC3C19A362E700EA66B8 /* SLVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FC3B19A362E700EA66B8 /* SLVAppDelegate.m */; };
-		4DD6FC3F19A362E700EA66B8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6FC3D19A362E700EA66B8 /* Main_iPhone.storyboard */; };
 		4DD6FC4219A362E700EA66B8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6FC4019A362E700EA66B8 /* Main_iPad.storyboard */; };
 		4DD6FC4519A362E700EA66B8 /* SLVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FC4419A362E700EA66B8 /* SLVViewController.m */; };
 		4DD6FC4719A362E700EA66B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6FC4619A362E700EA66B8 /* Images.xcassets */; };
@@ -74,7 +73,6 @@
 		4DD6FC3919A362E700EA66B8 /* SocialSharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialSharing-Prefix.pch"; sourceTree = "<group>"; };
 		4DD6FC3A19A362E700EA66B8 /* SLVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVAppDelegate.h; sourceTree = "<group>"; };
 		4DD6FC3B19A362E700EA66B8 /* SLVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVAppDelegate.m; sourceTree = "<group>"; };
-		4DD6FC3E19A362E700EA66B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		4DD6FC4119A362E700EA66B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		4DD6FC4319A362E700EA66B8 /* SLVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVViewController.h; sourceTree = "<group>"; };
 		4DD6FC4419A362E700EA66B8 /* SLVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVViewController.m; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 				349D282D19A5C3C400C48410 /* Twitter */,
 				4DD6FC3B19A362E700EA66B8 /* SLVAppDelegate.m */,
 				4DD6FC3A19A362E700EA66B8 /* SLVAppDelegate.h */,
-				4DD6FC3D19A362E700EA66B8 /* Main_iPhone.storyboard */,
 				4DD6FC4019A362E700EA66B8 /* Main_iPad.storyboard */,
 				4DD6FC4319A362E700EA66B8 /* SLVViewController.h */,
 				4DD6FC4419A362E700EA66B8 /* SLVViewController.m */,
@@ -346,7 +343,6 @@
 				4DD6FC6719A364DD00EA66B8 /* AAShareBubbles.bundle in Resources */,
 				4DD6FC4219A362E700EA66B8 /* Main_iPad.storyboard in Resources */,
 				4DD6FC4719A362E700EA66B8 /* Images.xcassets in Resources */,
-				4DD6FC3F19A362E700EA66B8 /* Main_iPhone.storyboard in Resources */,
 				6FCB3F3419A4E24F004EBAF1 /* GooglePlus.bundle in Resources */,
 				4DD6FC3619A362E700EA66B8 /* InfoPlist.strings in Resources */,
 			);
@@ -403,14 +399,6 @@
 				4DD6FC3519A362E700EA66B8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4DD6FC3D19A362E700EA66B8 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DD6FC3E19A362E700EA66B8 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		4DD6FC4019A362E700EA66B8 /* Main_iPad.storyboard */ = {
