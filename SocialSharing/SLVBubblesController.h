@@ -10,6 +10,7 @@
 #import "SLVViewController.h"
 #import <Social/Social.h>
 
+@class SLVLInShareViewController;
 @class SLVGoogleShare;
 @class SLVTwitterShare;
 @class SLVFaceBookShare;
@@ -27,7 +28,7 @@
 ///FaceBook f                                              ////
 @property(strong,nonatomic)SLVFaceBookShare *facebookShare;////
 ///////////////////////////////////////////////////////////////
-
+@property (nonatomic) SLVLInShareViewController * linkedIn;
 //SLViewController
 @property(strong, nonatomic) UIViewController * mainController;
 

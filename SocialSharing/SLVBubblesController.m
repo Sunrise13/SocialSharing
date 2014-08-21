@@ -13,6 +13,7 @@
 #import "SLVGoogleShare.h"
 #import "SLVTwitterShare.h"
 #import "SLVFaceBookShare.h"
+#import "SLVLInShareViewController.h"
 
 @interface SLVBubblesController() <AAShareBubblesDelegate>
 {
@@ -40,6 +41,7 @@
     shareBubbles.showTumblrBubble = YES;
     shareBubbles.showVkBubble = YES;
     shareBubbles.showInstagramBubble = YES;
+    shareBubbles.showLinkedInBubble=YES;
     [shareBubbles show];
 
     //Guys it's special for GOOGLE+ :)
@@ -80,6 +82,16 @@
         case AAShareBubbleTypeVk:
             NSLog(@"Vkontakte (vk.com)");
             break;
+        case AAShareBubbleTypeLinkedIn:
+            NSLog(@"LinkedIn");
+            self.linkedIn=[[SLVLInShareViewController alloc] init];
+           // self.linkedIn.controllerWithData=self.controllerWithData;
+            //[self presentViewController:self.linkedIn animated:YES completion:nil];
+            //[[[UIApplication sharedApplication] keyWindow].rootViewController.navigationController pushViewController:self.linkedIn animated:YES];
+            [self.navigationController pushViewController:self.linkedIn animated:YES];
+            
+            break;
+
         default:
             break;
     }
