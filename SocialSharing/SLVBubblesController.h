@@ -13,7 +13,7 @@
 @class SLVGoogleShare;
 @class SLVTwitterShare;
 @class SLVFaceBookShare;
-
+@class SLVVkViewController;
 
 @interface SLVBubblesController : UIViewController
 
@@ -26,6 +26,9 @@
 ///                                                        ////
 ///FaceBook f                                              ////
 @property(strong,nonatomic)SLVFaceBookShare *facebookShare;////
+///                                                        ////
+///VKONTAKTE                                               ////
+@property(strong, nonatomic) SLVVkViewController * VkShare;////
 ///////////////////////////////////////////////////////////////
 
 //SLViewController

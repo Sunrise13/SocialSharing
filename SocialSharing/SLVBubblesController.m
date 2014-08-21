@@ -13,6 +13,9 @@
 #import "SLVGoogleShare.h"
 #import "SLVTwitterShare.h"
 #import "SLVFaceBookShare.h"
+#import "SLVVkViewController.h"
+
+
 
 @interface SLVBubblesController() <AAShareBubblesDelegate>
 {
@@ -78,6 +81,8 @@
             NSLog(@"Tumblr");
             break;
         case AAShareBubbleTypeVk:
+            [self initVk];
+            [self.navigationController pushViewController:self.VkShare animated:YES];
             NSLog(@"Vkontakte (vk.com)");
             break;
         default:
@@ -89,6 +94,15 @@
     NSLog(@"All Bubbles hidden");
 }
 
+
+-(void) initVk
+{
+    if(!self.VkShare)
+    {
+        _VkShare = [[SLVVkViewController alloc] init];
+        _VkShare.bubbleController = self;
+    }
+}
 
 
 @end
